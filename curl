@@ -1,0 +1,49 @@
+curl 'https://www.wayfair.com/a/account/authentication/login' \
+  -H 'accept: application/json' \
+  -H 'accept-language: zh-CN,zh;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'cookie: CSNUtId=23e17d3a-66b1-ba7c-a47f-3835bfc15202; ExCSNUtId=23e17d3a-66b1-ba7c-a47f-3835bfc15202; canary=0; CSN_CSRF=bcedb6be26a614eab0c3839b18a2f1a265a2939b6088ced15a9f6664678f3b35; _pxvid=4b0ef5ef-53b8-11ef-b48d-34cf814819e8; __ssid=d822872a52d741c116a9115059ec007; cjConsent=MHxOfDB8Tnww; cjUser=49114d50-a8b4-4581-b385-184d9a60cf2b; __attentive_id=9a3e55b8366a466e83422023628a8642; _attn_=eyJ1Ijoie1wiY29cIjoxNzIyOTIzNjQ5MDQyLFwidW9cIjoxNzIyOTIzNjQ5MDQyLFwibWFcIjoyMTkwMCxcImluXCI6ZmFsc2UsXCJ2YWxcIjpcIjlhM2U1NWI4MzY2YTQ2NmU4MzQyMjAyMzYyOGE4NjQyXCJ9In0=; __attentive_cco=1722923649044; sm_uuid=1722924501035; _gid=GA1.2.1855365350.1722923649; __podscribe_wayfair_referrer=_; __podscribe_wayfair_landing_url=https://www.wayfair.com/v/account/welcome/show?logout=1722861713&logout=1722861825; __podscribe_did=pscrb_9d376dcd-e90d-498d-a394-1ea0d6be7360; rskxRunCookie=0; rCookie=ax9dkq0a8cep20k3eb1pvlzgz97y5; _tt_enable_cookie=1; _ttp=GpFEe4WeL2hVIrAwsybhYblzVUP; __attentive_dv=1; ftr_ncd=6; i18nPrefs=lang%3Den-US; FVSID=49-481f6843-4fc2-491d-9e3a-9b5666e193c9; ndp_session_id=9b39c437-310c-44ac-87b8-06da1a862fa1; coreGatewayOptOut=modal; vid=23e17d3a-66b2-0f81-ae59-adb4fc42b102; SFSID=ba4c1b5a5ab17cf248f256434f404afa; WFDC=DSM; serverUAInfo=%7B%22browser%22%3A%22Google%20Chrome%22%2C%22browserVersion%22%3A127%2C%22OS%22%3A%22Mac%20OS%20X%22%2C%22OSVersion%22%3A%22%22%2C%22isMobile%22%3Afalse%2C%22isTablet%22%3Afalse%2C%22isTouch%22%3Afalse%7D; __cf_bm=adNM.roggQGRlPrnbfJ3_UCZykTlwcJIu1c6eAyG9Zs-1722945410-1.0.1.1-BA2yAXc_wkio8qnVAz8IgJeSfB8BlKftHqV.RipfAat4Sn7lorDnDtpSVCOz7vn15.SdyTRsM1U4k8ZYqaJpDg; postalCode=67346; pxcts=f81ab096-53ea-11ef-8d5e-b10772712e3e; _wf_fs_sample_user=false; _dpm_ses.15e8=*; IR_gbd=wayfair.com; _gat_gtag_UA_2081664_4=1; __attentive_ss_referrer=ORGANIC; otx=I+F9OmayD4GuWa20/EKxAg==; IR_12051=1722945421135%7C0%7C1722945421135%7C%7C; _rdt_uuid=1722923648687.79e918a8-1ade-44c4-81a6-0feb9164bec6; __attentive_pv=2; _ga_0GV7WXFNMT=GS1.1.1722945414.3.1.1722945421.53.0.0; _ga_Q0HJWP456J=GS1.1.1722945414.4.1.1722945421.0.0.0; _ga=GA1.1.1315243021.1722923649; _dpm_id.15e8=c264d318-4ecb-4f42-a579-463a6c14622a.1722923649.2.1722945422.1722925028.21684a3a-cd2d-4373-8f5f-8366aca7f31a; lastRskxRun=1722945422121; forterToken=da414d6fd4f84c59818429b98419458a_1722945420752_1278_UDF43-m4_20ck_TLgsyr7rla4%3D-686-v2; forterToken=da414d6fd4f84c59818429b98419458a_1722945420752_1278_UDF43-m4_20ck_TLgsyr7rla4%3D-686-v2; _px3=f2a3d8b0d095fda4b809667a5286e0dd36fff4f422ba8feae33e9fa2d091de48:/UbgBmPiCX7nOF0WqvOEsRXIWi/7SAOsJ8qkoyIYFSY22AtlRf9LLhkIEh87MFUSIOM4s2RkYDvop2jmZHoboA==:1000:xZPxKOnAhATewTbwW9Bg7Owyu29lkhUKvFjRN+V9s/uI5ebaW5Z+Ro2D/7WU39M7vuqvHYl/ORh/GpfBVBil4c2Wp02SiTtL2nzuMvZL1gGoEUHs76jZtZCbms7nUXTG2sqc9NBir4jdg+lnb/KRGPv5uHWvyUDl/5QGM6k+96OCI9HiS7Uq1vZPREp0yD+AdZhcg6O7Fbca6I1wRTipEW0HHyAwN2zgY+qKXpOznrI=; CSNPersist=page_of_visit%3D20; attntv_mstore_email=wvaiyr47381@chacuo.net:0; _gcl_au=1.1.856283406.1722923649.1262632019.1722945442.1722945442' \
+  -H 'origin: https://www.wayfair.com' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://www.wayfair.com/a/account/authentication/login' \
+  -H 'sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36' \
+  -H 'x-auth-caller-context: auth_main_page_context' \
+  -H 'x-parent-txid: I+F9OmayD4s7l8GCID2IAg==' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --data-raw '{"email":"wvaiyr47381@chacuo.net"}'
+
+
+
+
+
+
+
+curl 'https://www.wayfair.com/a/account/authentication/login' \
+  -H 'accept: application/json' \
+  -H 'accept-language: zh-CN,zh;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'cookie: CSNUtId=23e17d3a-66b1-ba7c-a47f-3835bfc15202; ExCSNUtId=23e17d3a-66b1-ba7c-a47f-3835bfc15202; canary=0; CSN_CSRF=bcedb6be26a614eab0c3839b18a2f1a265a2939b6088ced15a9f6664678f3b35; _pxvid=4b0ef5ef-53b8-11ef-b48d-34cf814819e8; __ssid=d822872a52d741c116a9115059ec007; cjConsent=MHxOfDB8Tnww; cjUser=49114d50-a8b4-4581-b385-184d9a60cf2b; __attentive_id=9a3e55b8366a466e83422023628a8642; _attn_=eyJ1Ijoie1wiY29cIjoxNzIyOTIzNjQ5MDQyLFwidW9cIjoxNzIyOTIzNjQ5MDQyLFwibWFcIjoyMTkwMCxcImluXCI6ZmFsc2UsXCJ2YWxcIjpcIjlhM2U1NWI4MzY2YTQ2NmU4MzQyMjAyMzYyOGE4NjQyXCJ9In0=; __attentive_cco=1722923649044; sm_uuid=1722924501035; _gid=GA1.2.1855365350.1722923649; __podscribe_wayfair_referrer=_; __podscribe_wayfair_landing_url=https://www.wayfair.com/v/account/welcome/show?logout=1722861713&logout=1722861825; __podscribe_did=pscrb_9d376dcd-e90d-498d-a394-1ea0d6be7360; rskxRunCookie=0; rCookie=ax9dkq0a8cep20k3eb1pvlzgz97y5; _tt_enable_cookie=1; _ttp=GpFEe4WeL2hVIrAwsybhYblzVUP; __attentive_dv=1; ftr_ncd=6; i18nPrefs=lang%3Den-US; FVSID=49-481f6843-4fc2-491d-9e3a-9b5666e193c9; ndp_session_id=9b39c437-310c-44ac-87b8-06da1a862fa1; coreGatewayOptOut=modal; vid=23e17d3a-66b2-0f81-ae59-adb4fc42b102; SFSID=ba4c1b5a5ab17cf248f256434f404afa; serverUAInfo=%7B%22browser%22%3A%22Google%20Chrome%22%2C%22browserVersion%22%3A127%2C%22OS%22%3A%22Mac%20OS%20X%22%2C%22OSVersion%22%3A%22%22%2C%22isMobile%22%3Afalse%2C%22isTablet%22%3Afalse%2C%22isTouch%22%3Afalse%7D; __cf_bm=adNM.roggQGRlPrnbfJ3_UCZykTlwcJIu1c6eAyG9Zs-1722945410-1.0.1.1-BA2yAXc_wkio8qnVAz8IgJeSfB8BlKftHqV.RipfAat4Sn7lorDnDtpSVCOz7vn15.SdyTRsM1U4k8ZYqaJpDg; postalCode=67346; pxcts=f81ab096-53ea-11ef-8d5e-b10772712e3e; _wf_fs_sample_user=false; _dpm_ses.15e8=*; IR_gbd=wayfair.com; __attentive_ss_referrer=ORGANIC; otx=I+F9OmayD4GuWa20/EKxAg==; IR_12051=1722945421135%7C0%7C1722945421135%7C%7C; _rdt_uuid=1722923648687.79e918a8-1ade-44c4-81a6-0feb9164bec6; __attentive_pv=2; _ga_0GV7WXFNMT=GS1.1.1722945414.3.1.1722945421.53.0.0; _ga_Q0HJWP456J=GS1.1.1722945414.4.1.1722945421.0.0.0; _ga=GA1.1.1315243021.1722923649; _dpm_id.15e8=c264d318-4ecb-4f42-a579-463a6c14622a.1722923649.2.1722945422.1722925028.21684a3a-cd2d-4373-8f5f-8366aca7f31a; lastRskxRun=1722945422121; forterToken=da414d6fd4f84c59818429b98419458a_1722945420752_1278_UDF43-m4_20ck_TLgsyr7rla4%3D-686-v2; forterToken=da414d6fd4f84c59818429b98419458a_1722945420752_1278_UDF43-m4_20ck_TLgsyr7rla4%3D-686-v2; CSNPersist=page_of_visit%3D20; attntv_mstore_email=wvaiyr47381@chacuo.net:0; _gcl_au=1.1.856283406.1722923649.1262632019.1722945442.1722945442; CSNID=593B940E-B247-4541-B195-ADB34021F5F8; WFCS=CS6; CSNBrief=DRF%3Ddsm1; WFDC=PDX; _px3=dacc7ea087157521cf379fa023d718933d7ee368ac08549e6daed4b631a28400:JmI7BCKd+IZhv81hjb05HPRbiAxp+2IydAao97BjILzwIIp9VKQXs40U3/VaRIslHNrpOThjJsJAj6KTTrWIqA==:1000:q57x4LhydzHEP79QVNz5sGNFqUL1LUclnv29zgHQ1QW4WN1LDhVTZvSvSukdtKkNz/FZ6WNp6DkfOGvFOI/2ikyAP95czDzu6BBnp8jn9ki8ZTr9hOkvLBF4RmeY8XnlFihz2BW7Rvt6QP3xEz3wNnkO13axVuck0LOEhGVQIGg26u2O/f2A11axP/yu4DdqtyQK79oGahvD0PdtjrEulsupX9ZuRUcOr2G4tcz5+g0=' \
+  -H 'origin: https://www.wayfair.com' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://www.wayfair.com/a/account/authentication/login' \
+  -H 'sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36' \
+  -H 'x-auth-caller-context: auth_main_page_context' \
+  -H 'x-parent-txid: I+F9OmayD4s7l8GCID2IAg==' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --data-raw '{"email":"wvaiyr47381@chacuo.net","grant_type":"PWD","page":"AccountLogin","password":"wvaiyr47381","recaptchaResponse":null,"recaptchaSiteKey":null,"step":"password","userDefaultedToPassword":false}'
