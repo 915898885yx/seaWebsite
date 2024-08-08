@@ -1,0 +1,26 @@
+var request = require('request');
+var options = {
+  'method': 'GET',
+  'url': 'https://www.wayfair.com/v/account/authentication/login',
+  'headers': {
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'zh-CN,zh;q=0.9',
+    'cache-control': 'no-cache',
+    'cookie': 'FVSID=49-bd1e9cbe-fde2-4c10-a23d-265c330bd3ce; __cf_bm=CEqIa4llMA.Qo33z4r8M6rOPX9rvwLmzxGpkIjADWBg-1723111266-1.0.1.1-_9XMBG_6To9dUT7f1axYQeYwtcnDO2heM8jGXyxSG23qde6biBSJT6u.j6WlOgWDLfcgLE75S4Pqhc4GlnkoiQ; otx=I+F9Oma0j+omYCPrYc4EAg==; CSNPersist=page_of_visit%3D2; CSNUtId=23e17d3a-66b1-bb13-aec7-adb7dd03ef02; ExCSNUtId=23e17d3a-66b1-bb13-aec7-adb7dd03ef02; SFSID=ea110755f42a1403c356bb510aec7709; canary=0; serverUAInfo=%7B%22browser%22%3A%22Google%20Chrome%22%2C%22browserVersion%22%3A125%2C%22OS%22%3A%22Mac%20OS%20X%22%2C%22OSVersion%22%3A%22%22%2C%22isMobile%22%3Afalse%2C%22isTablet%22%3Afalse%2C%22isTouch%22%3Afalse%7D; _pxhd=QBgaPmNkxCCGWEzse/Q4PSjRZUzRCoeBk1eDajxmwZ528qFp-2mclK1O2rijprc5gu2Vs5adZ6uJ0zXnTyaG6g==:tn0KS62G3J9YRG4KFxjlNyulrcT5XOFbI-mj/iaGxNER4sqK2VS5gcqbJ4ZcTlm6AczmK8/SaybHxl8ejOLDFaZiTIe-GZbK3T8PgV1dJk4=',
+    'pragma': 'no-cache',
+    'priority': 'u=0, i',
+    'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"macOS"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36'
+  }
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});

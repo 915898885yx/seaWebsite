@@ -1,15 +1,18 @@
 import fs from 'fs'
-fs.readFile('./data.txt', 'utf8', (err, data) => {
-    if (err) {
-        return console.log(err, 'err')
-    }
-})
+export function getUserList () {
+  try {
+    const data = fs.readFileSync('./data.txt', 'utf8')
+    console.log(data, 'data')
+    return data.split('\n')
+  } catch (e) {
+    throw('获取用户信息失败')
+  }
+}
 
-export async function getUserList () {
-    try {
-        const data = fs.readFileSync('./data.txt', 'utf8')
-        return data.split('\n')
-    } catch (e) {
-        throw('获取用户信息失败')
-    }
+export function writeUserInfoToResult (result) {
+  try {
+    fs.writeFileSync('./result.txt', result + '\n', 'utf8')
+  } catch (e) {
+    console.log('写入用户信息失败')
+  }
 }
