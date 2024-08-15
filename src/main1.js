@@ -1,6 +1,10 @@
 // @license Copyright (C) 2014-2024 PerimeterX, Inc (www.perimeterx.com).  Content of this file can not be copied and/or distributed.
 // try {
-    const window = {}, document = {}, navigator = {}, location = {}, Element = {}
+    var globalNum = 0,
+    globalPayload = {}
+    // const window = {}, document = {}, navigator = {}, location = {}, Element = {}
+    // var zf = []
+    // var _zf = []
     window._pxAppId = "PX3Vk96I6i"
     function getPostData () {
         return new Promise(_resolve => {
@@ -17,7 +21,7 @@
             }
             var e = 0
               , r = 0
-              , o = global.atob
+              , o = globalThis.atob
               , a = {};
             function c(e) {
                 var r = t()
@@ -1105,7 +1109,6 @@
                           , u = e && o.indexOf(e) > -1 && (o.indexOf("/main.min.js") > -1 || o.indexOf("/init.js") > -1);
                         if (T.XMLHttpRequest && (u || f)) {
                             0;
-                            debugger
                             var s = encodeURIComponent('{"appId":"'.concat(n, '","vid":"').concat(Xt() || "", '","tag":"').concat(St(), '","line":"').concat(a, ":").concat(c, '","script":"').concat(o, '","contextID":"').concat(f ? "C" : "S", "_").concat(Ye[bn], '","stack":"').concat(i && _t(i.stack || i.stackTrace) || "", '","message":"').concat(_t(r) || "", '"}'))
                               , l = new XMLHttpRequest;
                             l.open("GET", X + s, !0),
@@ -1153,7 +1156,9 @@
                              */
                             var r = this.channels[t].shift();
                             // Op("{do: null, ob: xxx}", true)
+                            console.log('triggertriggertriggertrigger'),
                             u(r.fn) === b && r.fn.apply(r.ctx, n),
+                            console.log('triggertriggertriggertrigger1')
                             r.once || e.push(r)
                         }
                         this.channels[t] = e
@@ -1180,7 +1185,6 @@
                       , r = t.name
                       , o = t.stack;
                     0;
-                    debugger
                     var a = encodeURIComponent('{"appId":"'.concat(T._pxAppId || "", '","vid":"').concat(Xt() || "", '","tag":"').concat(St(), '","name":"').concat(_t(r) || "", '","contextID":"S_').concat(n, '","stack":"').concat(_t(o) || "", '","message":"').concat(_t(e) || "", '"}'))
                       , c = new XMLHttpRequest;
                     c.open("GET", X + a, !0),
@@ -1548,7 +1552,6 @@
             }
             var Ir, Or = J("cGF5bG9hZD0="), _r = J("YXBwSWQ9"), Cr = J("dGFnPQ=="), Rr = J("dXVpZD0="), Qr = J("eHV1aWQ9"), Fr = J("ZnQ9"), Nr = J("c2VxPQ=="), kr = J("Y3M9"), Vr = J("cGM9"), Pr = J("c2lkPQ=="), Mr = J("dmlkPQ=="), Wr = J("anNjPQ=="), jr = J("Y2k9"), Br = J("cHhoZD0="), Dr = J("ZW49"), Lr = J("cnNjPQ=="), Hr = J("Y3RzPQ=="), Gr = J("YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVk"), Ur = J("X3B4VXVpZA=="), qr = J("X3B4QWN0aW9u");
             function Jr() {
-                debugger
                 return T[qr]
             }
             var zr = null;
@@ -1580,7 +1583,6 @@
                     no(t)
                 }
             }, Do = ((go = Ht(ar()))[go.length - 1] || {})[0], Lo = Ve(Fe), Ho = Ve(Ne), Go = "px_hvd", Uo = J("X3B4d3Zt");
-            debugger
             function qo() {
                 return Yo
             }
@@ -1596,8 +1598,8 @@
                 Lo.setItem(Go, Io))
             }
             function $o() {
-                var t = d.getElementById(Qo);
-                return t && t.getElementsByTagName("iframe").length > 0
+                // var t = d.getElementById(Qo);
+                // return t && t.getElementsByTagName("iframe").length > 0
             }
             function ta(t) {
                 var n, e = null, r = (n = wt(),
@@ -3236,7 +3238,6 @@
             var yu, Zu, Yu = "cu", bu = function(t, n, e, r, o) {
                 return Math[wu(324)]((t - n) / (e - n) * (o - r) + r)
             }, Su = function(t, n) {
-                debugger
                 var r = wu
                   , o = t[r(327)]()
                   , a = function() {
@@ -3266,7 +3267,6 @@
                         return w
                     }(a, o.length, i);
                 return o = function(t, n, e) {
-                    debugger
                     for (var a = "", c = 0, i = t.split(""), f = 0; f < t.length; f++)
                         a += n.substring(c, e[f] - f - 1) + i[f],
                         c = e[f] - f - 1;
@@ -4407,7 +4407,6 @@
             }
             var gs = 0;
             function xs(t, n) {
-                debugger
                 for (var e = c, r = rf(), o = 0; o < t.length; o++) {
                     var a = t[o];
                     a.d[e("YTxfZXtuQw")] = It,
@@ -4434,7 +4433,6 @@
                     cs: s,
                     pc: l
                 }, h = Su(t, v), p = [Or + h, _r + n[Gn], Cr + n[Un], Rr + Kr(), Fr + n[qn], Nr + gs++, Dr + "NTA"], T = $r();
-                debugger
                 // h 就是payload的值 Or='payload'
                 T && p.push(Qr + T),
                 s && p.push(kr + s),
@@ -6926,11 +6924,41 @@
             var Pv = !1
               , Mv = 0;
             function Wv(t) {
-                debugger
                 return t += "&" + Lr + ++Mv
             }
             function jv(t, n, e, r, o, a, i) {
-                debugger
+                
+                function res (responseText) {
+                    // zf = _zf
+                    console.log(responseText, 'responseText')
+                    var n = c;
+                    u(t[ee]) === b && t[ee](responseText, t),
+                    t[re] && (Pv = function(t) {
+                        try {
+                            var n = it(t);
+                            if (0 === (n.do || n.ob).length) {
+                                var e = (t || "").substring(0, 20);
+                                return we(new Error("empty commands: ".concat(e)), Ye[Vn]),
+                                !0
+                            }
+                        } catch (n) {
+                            var r = (t || "").substring(0, 20);
+                            n.message += " ".concat(r),
+                            we(n, Ye[Pn])
+                        }
+                        return !1
+                    }(responseText)),
+                    
+                    (t[re] && (Oi = Math[Si(365)](ga() - Ii)),
+                    
+                    e(responseText, t[n("YTxfZnhgTw")]),
+                    
+                    r(responseText, t),
+                    
+                    t[re] && u(ss(responseText)) !== Y && o(t))
+                }
+                _resolve(res)
+                return
                 var f = function(t, n) {
                     try {
                         var e = new XMLHttpRequest;
@@ -6956,7 +6984,6 @@
                     }
                     ,
                     f.onload = function() {
-                        debugger
                         var n = c;
                         u(t[ee]) === b && t[ee](f.responseText, t),
                         t[re] && (Pv = function(t) {
@@ -7058,7 +7085,6 @@
               , uh = fh[Lv(278)]
               , sh = 5 * fh[Lv(278)]
               , lh = function(t) {
-                debugger
                 return jv(t, xh(t), dh, Yh, Zh, mh, gh)
             }
               ,
@@ -7094,7 +7120,6 @@
                   , X = c;
                 nh++,
                 t = t || Th();
-                debugger
                 for (var A = [], E = [], I = 0; I < t.length; I++) {
                     var O = t[I];
                     if (!la(O.ts)) {
@@ -7133,7 +7158,6 @@
                             N.t === X(w(b)) && (Q[X(w(b))] = !0)
                         }
                     }
-                    debugger
                     // target R = payload=dvasdvaa&uuid=125412
                     Q[w(S)] = R,
                     Pc() && Q[X(w(o))] && (Q[ee] = function(t, n) {
@@ -7157,13 +7181,12 @@
                     Q[Bn] = 0) : Pc() && (Q[oe] = !0,
                     Q[Bn] = 0),
                     lh(Q)
-                    setTimeout(() => {
-                        _resolve({
-                            data: Q,
-                            zf: JSON.stringify(t)
-                        })
-                    }, 1000)
-                    // console.log(Q, 'Q')
+                    
+                    if (globalNum === 1) {
+                        sessionStorage.setItem("postData", JSON.stringify(Q.postData))
+                        // console.trace(Q.postData, 'Q')
+                    }
+                    globalNum++
                 }
             }
             )),
@@ -7338,13 +7361,11 @@
                 hh(null),
                 t[i(e)] ? (t[i(e)] = !1,
                 setTimeout((function() {
-                    debugger
                     lh(t)
                 }
                 ), 100)) : $v + 1 < vh[jn][i(r)] ? ($v++,
                 vh[Dn]++,
                 setTimeout((function() {
-                    debugger
                     lh(t)
                 }
                 ), 100)) : ($v = 0,
@@ -7905,6 +7926,7 @@
             }
             function Ap() {
                 var t = hp;
+                vh[Jn]()
                 nu()[t(342)] > 0 && vh[Bn] < vh[Hn] ? vh[Jn]() : Ip()
             }
             function Ep() {
@@ -7951,7 +7973,6 @@
                         var c = J(a)
                           , i = Lu(n);
                         o(a = Nt(c, parseInt(i, 10) % 128)[r(e.P)](r(e.r)), !1);
-                        debugger
                     }
                 }(t, St()),
                 n && (mp ? Gi() && _p() : (nr(De[cn]) && function(t) {
@@ -8136,7 +8157,6 @@
                 )(r),
                 qf[n(t.c)](e(n(t.L)), vh[zn]),
                 function() {
-                    debugger
                     var t, n = {
                         b: 363,
                         x: 346,
@@ -8155,7 +8175,6 @@
                     var r = c
                     var _key = r(e(n.b))
                     var o = (f(t = {}, _key, ea()))
-                    debugger
                     f(t, r(e(n.x)), sf)
                     f(t, r(e(n.J)), T[e(n.w)] === T[e(n.c)] ? 0 : 1)
                     f(t, r(e(n.L)), g && g[e(n.o)])
@@ -8179,14 +8198,37 @@
         })
         
     }
-    export async function initPostData () {
-        try {
-            const result = await getPostData()
-            return result
-        } catch (e) {
-            console.log(e, 'e')
-        }
+    // const firstRes = '{"do": null,"ob":"AV8BX19fEg0bEBAQEF9fXwFfARJfVl1eXFZdXFZfW1teWlhcV1xbXxAQEBABX18BXwFfXxJfWVxdWV5dXVxaWFteEBAQEF8BAQEBXxINHxsfXllaXBgcCwYaWhsJBF1WCRAQEBABX18BXwFfARJcWlpfEBAQEF9fAV9fXxJXXl9aCAxdVghZVloNDwxbXFtWCldYVldYW1tcDFkLXghYCwpWXA1aWwtZD11cClxdXwxdCgtYXgoPWllbD1kIEBAQEF9fXwEBXxINDRJYXhI7XCgaNDggHgopO1c6KShaIRlTUxAQEBBfX18BAV8SBwoeMQ0SWF4SX0Id"}'
+    let firstRes
+    console.log(location.search)
+    async function initPostDataSecond (firstRes, _z) {
+        // _zf = JSON.parse(_z)
+        return new Promise(async resolve => {
+            try {
+                const result = await getPostData()
+                console.log(result, 'result')
+                await result(firstRes)
+                resolve(globalPayload)
+            } catch (e) {
+                console.log(e, 'main1')
+            }
+
+        })
     }
+    
+
+    async function init () {
+        const secondPayload = await initPostDataSecond(firstRes)
+        console.log(secondPayload, 'htmlsecondPayload')
+    }
+    const firstResFlag = setInterval(() => {
+        const _firstRes = sessionStorage.getItem('firstRes')
+        if (_firstRes) {
+            clearInterval(firstResFlag)
+            firstRes = _firstRes
+            init()
+        }
+    }, 500)
 // } catch (t) {
 //     console.log(t, 't')
 //     // (new Image).src = "https://collector-a.px-cloud.net/api/v2/collector/clientError?r=" + encodeURIComponent('{"appId":"' + (window._pxAppId || "") + '","tag":"v8.7.8","name":"' + t.name + '","line":"' + (t.lineNumber || t.line) + '","script":"' + (t.fileName || t.sourceURL || t.script) + '","contextID":"S_2","stack":"' + (t.stackTrace || t.stack || "").replace(/"/g, '"') + '","message":"' + (t.message || "").replace(/"/g, '"') + '"}')
