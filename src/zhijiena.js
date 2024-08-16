@@ -4,7 +4,9 @@ import puppeteer from "puppeteer";
 function openLaunch () {
     return new Promise(async resolve => {
         const browser = await puppeteer.launch({
-            headless: false
+            headless: false,
+            waitForInitialPage: true,
+            // executablePath: '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
         })
         const page = await browser.newPage()
         await page.setExtraHTTPHeaders({
@@ -19,7 +21,7 @@ function openLaunch () {
                 clearInterval(timer)
                 await browser.close()
             }
-        }, 2000)
+        }, 200000)
     })
 }
 
@@ -30,4 +32,4 @@ export function getPx3 () {
     })
 }
 
-// getPx3()
+getPx3()

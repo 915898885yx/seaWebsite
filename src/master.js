@@ -1,12 +1,12 @@
 import request from 'request'
-import { getPx3 } from './zhijiena.js'
+// import { getPx3 } from './zhijiena.js'
 import { getUserList, writeUserInfoToResult } from './read.js'
 const result = {
   success: 0,
   fail: 0
 }
 
-let _px3 = '932771c232e473aef27db36c2cc3bc00c78c30b5d35ec4da9092416ff3c46cee:0v6ARXl3eeSNwc88lCtM/8j77bQAgNCP5tACwOQRWhqdgqJhHqJ1V4xfasZdmsH6cEckAwLQXU5DjeXYeXIkMA==:1000:Ai3rjbM2FHaaadJFX12Nwu+wRN42xuI/d4OluadT3Kr5ItrqdCU9lUazvc0UFSyvBBreN2Yi11Lpbd/JkOrs/4nTibYfzdkrqtoO4yyhvIQCHI2QVu4HuvyGhryYZDl824dplgOHnetvhvIlrFSd38FDkcGnQjkkhnhSfB1T8jKkCnh3Q6NIHuoNMPTFzlBID7Fo9pahNjwx6YuMz2VlqPkGiLv8TUr6ADzuqiGJXjw='
+let _px3 = '6f80ee6a36260ed6c2d7ad245427e49a1eb2d0ac900fa57d3567cca4e99edd20:xObFPUB48CAK1S3cTxEg93Bks4Wt48dtLzoRR/X5SaF0H17kSzXqWSesVHT1ieL6ux9oKjHeFS6UE0njzYDZJw==:1000:sHRPr8nNke5vKnjnT7MW9R1OlVCrOWNxtO/0C72vCCzRgq1mtU8N+xV3/N/XbH8T1k95hjYaGgrikYNjSDQgQypKszX1aV4l0fQY4cDW5OVQ8nMy0Kk2+nhT+Nu/ylBY4LoqDj+ybTeN+bi7eo/OejwrhScxGKYPxGhS+kJK6SoXf4zHX/Kv+xJTHCFTGThqJO3lEz3RGWjki6ksIhKh4VTQ/L0ujdmWuMDpLSJCStg='
 
 let cookie = {
   // _px3: "15398bd29ca0d199b11ba8b368358df0d8655b5da74ee3aedbd5fc39c6bed3b5:mFH+qRieoPolwZX0rJ3HeUpeaq23HW2/dKXRreZbNgx5AfIOBQ6ynr9jVm1PCRZZ4Pyi/YG3AfUyCZim3wrjrA==:1000:+Lk6PbtGKaF7HOlRYNQJXboJeEsbj6ftuEvfljylBbxOzkkfEjBbg4veHfSoBnU5M08yH6DKB3Z0TDwq4zGgJyozKFirxXvJ/7lM6CaXqeiCiTDXtNusAAKIW1CGQgmdFaRtiugE0u2VSya9STejCmVaOFpTTbxDy0gM1XnngarYnT08RW3bxLzty/cn32ZnRsPTXzXjI5QKHoOcGW10/Ec0WiyziwmDSWA3jnAPwEw=",
@@ -168,12 +168,12 @@ function getUa () {
 }
 
 async function init () {
-  const cookie = await getPx3()
+  // const cookie = await getPx3()
   // cookies.forEach(cookieItem => {
   //   cookie[cookieItem.name] = cookieItem.value
   // })
-  console.log(cookie.value, 'value')
-  _px3 = cookie.value
+  // console.log(cookie.value, 'value')
+  // _px3 = cookie.value
   const userList = getUserList()
   const random = Math.ceil(Math.random() * 100)
   userList.slice(random, random + 1).forEach(user => {
