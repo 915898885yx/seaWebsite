@@ -1,4 +1,4 @@
-function getUuid () {
+export function getUuid () {
     var xr = new Array(16);
     var Tr = function() {
             for (var t, n = 0; n < 16; n++)
@@ -65,4 +65,4 @@ function getUuid () {
     return Ar()
 }
 
-console.log(getUuid(), 'uuid')
+// console.log(getUuid(), 'uuid')

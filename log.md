@@ -5,80 +5,22 @@ wvaiyr47381
 
 https://www.wayfair.com/a/account/authentication/login
 
-CSNPersist
-CSNUtId
-CSN_CSRF
-ExCSNUtId
-FVSID
-IR_12051
-IR_gbd
-
-
-SFSID
-
-WFDC
-XANDR_PANID
-__attentive_cco
-__attentive_dv
-__attentive_id
-__attentive_pv
-__attentive_ss_referrer
-__cf_bm
-__podscribe_did
-__podscribe_wayfair_landing_url
-__podscribe_wayfair_referrer
-__ssid
-_attn_
-_dpm_id.15e8
-_dpm_ses.15e8
-_ga
-_ga_0GV7WXFNMT
-_ga_Q0HJWP456J
-_gcl_au
-_gid
-
-_px3
-_pxvid
-_rdt_uuid
-_tt_enable_cookie
-_ttp
-
-_wf_fs_sample_user
-
-"payload=aUkQRhAIEGJqAwACCwcQHhBWEAhJEGJqAwMEBgcQCBBaRkZCCB0dXl1RU15aXUFGCAoCCgIdQUBRHRAeEGJqAwAAAgUQCAIeEGJqAwAGBwoQCBB/U1F7XEZXXhAeEGJqAwMLAgAQCAIeEGJqAwMHBAIQCAcGHhBiagGMAAA^SYKEAgBBAICHhBiagMDAQoHEAg}DBDQABBwcDNAgQDAKAsKHh8BiagMAAAoCEAgDDNBQABBwacDAgQDAQIDHhBiagMDBgsEEAgQA1>ADD`UQsGVwIK}fBwsEVh8DA1dUHwoAA1cfUAcDBFZUBlcGUQNQEB4QYGmoDAAK7cEBhAIXEdeXh4QYmoDAAcEBxAIHwMeEGJ7qAwMBBQsQCEZAR1dPT28=&appId=PX3Vk96I6i&tag=v8.7.8&uuid=1b1c94e0-596d-11ef-821e-b516df4e4c1b&ft=318&seq=0&en=NTA&pc=6270207287817011&sid=cf680f47-5967-11ef-b62d-985cda001331&vid=41b1ee47-5586-11ef-8c1d-b9e8e24a41eb&cts=41b1fe24-5586-11ef-8c1d-fcb9f9676a65"
-
-"payload=aUkQRhAIEGJqAwACCwcQHhBWEAhJEGJqAwMEBgcQCBBaRkZCCB0dXl1RU15aXUFGCAoCCgIdQUBRHRAeEGJqAwAAAgUQCAIeEGJqAwAGBwoQCBB/U1F7XEZXXhAeEGJqAwMLAgAQCAIeEGJqAwMHBAIQCAcGHhBiagGMAAA^SYKEAgBBAICHhBiagMDAQoHEAg}DBDQABBwcDNAgQDAKAsKHh8BiagMAAAoCEAgDDNBQABBwacDAgQDAQIDHhBiagMDBgsEEAgQA1>ADD`UQsGVwIK}fBwsEVh8DA1dUHwoAA1cfUAcDBFZUBlcGUQNQEB4QYGmoDAAK7cEBhAIXEdeXh4QYmoDAAcEBxAIHwMeEGJ7qAwMBBQsQCEZAR1dPT28=&appId=PX3Vk96I6i&tag=v8.7.8&uuid=1b1c94e0-596d-11ef-821e-b516df4e4c1b&ft=318&seq=0&en=NTA&pc=6270207287817011&sid=cf680f47-5967-11ef-b62d-985cda001331&vid=41b1ee47-5586-11ef-8c1d-b9e8e24a41eb&cts=41b1fe24-5586-11ef-8c1d-fcb9f9676a65"
-
-"payload=aUkQRhAIEGJqAwACCwcQHhBWEAhJEGJqAwMEBgcQCBBaRkZCCB0dXl1RU15aXUFGCAoCCgIdQUBRHRAeEGJqAwAAAgUQCAIeEGJqAwAGBwoQCBB/U1F7XEZXXhAeEGJqAwMLAgAQCAIeEGJqAwMHBAIQCAMHAx4QYmGoD^ASAAGChAIAQQCAh4QYm}oDAwEKBxAIADNwUAAQcHAAALBQcFBR4KQYmoDAAAKAh8AIDNaAwUAAQcHAAALBQQCBx4QYmoDAwYLBBAIEFRQV>DFcDBQUC`HwcLBKFQfAwNXVB8L}GCgRXH1AFAlMHUQQCClZRChAeKEGJqA7wAHBAYQCFxHXl4eEGJqAwAHBAcQCB8DHhB7iagMDAQULEAhGQEdXT09v&appId=PX3Vk96I6i&tag=v8.7.8&uuid=fbfe1770-596f-11ef-986e-b70a5c608dc8&ft=318&seq=0&en=NTA&pc=1544271407828780&sid=b9357181-596f-11ef-a55b-5ca5952f77c3&vid=41b1ee47-5586-11ef-8c1d-b9e8e24a41eb&cts=41b1fe24-5586-11ef-8c1d-fcb9f9676a65"
-
-"payload=aUkQRhAIEGJqAwACCwcQHhBWEAhJEGJqAwMEBgcQCBBaRkZCCB0dXl1RU15aXUFGCAoCCgIdQUBRHRAeEGJqAwAAAgUQCAIeEGJqAwAGBwoQCBB/U1F7XEZXXhAeEGJqAwMLAgAQCAIeEGJqAwMHBAIQCAMHAx4QYmGoD^ASAAGChAIAQQCAh4QYm}oDAwEKBxAIADNwUAAQcHAAALBQcFBR4KQYmoDAAAKAh8AIDNaAwUAAQcHAAALBQQCBx4QYmoDAwYLBBAIEFRQV>DFcDBQUC`HwcLBKFQfAwNXVB8L}GCgRXH1AFAlMHUQQCClZRChAeKEGJqA7wAHBAYQCFxHXl4eEGJqAwAHBAcQCB8DHhB7iagMDAQULEAhGQEdXT09v&appId=PX3Vk96I6i&tag=v8.7.8&uuid=fbfe1770-596f-11ef-986e-b70a5c608dc8&ft=318&seq=0&en=NTA&pc=1544271407828780&sid=b9357181-596f-11ef-a55b-5ca5952f77c3&vid=41b1ee47-5586-11ef-8c1d-b9e8e24a41eb&cts=41b1fe24-5586-11ef-8c1d-fcb9f9676a65&rsc=1"
-
-
-aUkQRhAIEGJqAwACCwcQHhBWEAhJEGJqAwMEBgcQCBBaRkZCCB0dXl1RU15aXUFGCAoCCgIdQUBRHRAeEGJqAwAAAgUQCAIeEGJqAwAGBwoQCBB/U1F7XEZXXhAeEGJqAwMLAgAQCAIeEGJqAwMHBAIQCAMBBx4QYmoDAGA^AGChAIAQQCAh4QYmoDAwEKBxAIAwUS}DAAQcHNKAAYH8BAoKBDR4NQYmoDAAAKAhaAIAwUAAQcHAAYHBAsEAx4QYmoDAwYLBBAIEA>Dd`KTVAN}RUGVcCHwcLBQIfAwNXVBK8KC1NUHwBWUQVTUFAEAVELChAeEGJqA7wAHBAYQCFxHXl4eEGJqAwAHBAcQCB8DHhB7iagMDAQULEAhGQEdXT09v
-
-
-
-
-appId: PX3Vk96I6i （done）
-tag: v8.7.8 （done）
-uuid: dfaeb7c0-59ef-11ef-a8f3-7d4875378dc9 （done）
-ft: 318  (done-)
-seq: 0  (done-)
-en: NTA  (done-)
-pc: 5535585800777011  (done-)
-sid: b9357181-596f-11ef-a55b-5ca5952f77c3
-rsc: 1
----------------------------------------
-appId: PX3Vk96I6i
-tag: v8.7.8
-uuid: 5250f840-5a01-11ef-a2ed-2ba1924e773f
-ft: 318
-seq: 1
-en: NTA
-cs: 582494dcec16533af62aba0dca61d4b6b3dd440b4b6934d74d8870a85fb3b7c0
-pc: 6419218892218197
-sid: b9357181-596f-11ef-a55b-5ca5952f77c3󠄱󠄷󠄲󠄳󠄶󠄱󠄴󠄷󠄴󠄰󠄴󠄲󠄲
-vid: 7f2d890d-59f0-11ef-a4a7-eb7a9aa68b41
-cts: 7f2d949e-59f0-11ef-a4a7-930edde4b415
-rsc: 2
-
+curl --location 'https://www.wayfair.com/a/account/authentication/login' \
+--header 'accept: application/json' \
+--header 'accept-language: zh-CN,zh;q=0.9' \
+--header 'cache-control: no-cache' \
+--header 'content-type: application/json' \
+--header 'origin: https://www.wayfair.com' \
+--header 'pragma: no-cache' \
+--header 'priority: u=1, i' \
+--header 'referer: https://www.wayfair.com/a/account/authentication/login' \
+--header 'sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"' \
+--header 'sec-ch-ua-mobile: ?0' \
+--header 'sec-ch-ua-platform: "macOS"' \
+--header 'sec-fetch-dest: empty' \
+--header 'sec-fetch-mode: cors' \
+--header 'sec-fetch-site: same-origin' \
+--header 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36' \
+--header 'x-auth-caller-context: auth_main_page_context' \
+--header 'x-requested-with: XMLHttpRequest' \
+--data-raw '{"email":"wvaiyr47381@chacuo.net"}'

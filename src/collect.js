@@ -1,6 +1,7 @@
 import request from 'request'
 import puppeteer from 'puppeteer'
 import qs from 'qs'
+import { getUuid } from './uuid.js'
 import { initPostData } from './main.js'
 // import { initPostDataSecond } from './main1.js'
 const proxy = 'http://76xf70sORd-zone-mars-region-US:35527311@na.3cfb97945f46ee2a.ipmars.vip:4900'
@@ -84,17 +85,22 @@ function ajax (_body, zf) {
         console.log(body,'body')
         const secondRes = await openLaunch(body)
         const body2 = bodyFunc(secondRes) // vid  cts  rsc=1
-        // console.log(bodyFunc(secondRes), 'secondRes')
-        // request({
-        //     url: 'https://collector-px3vk96i6i.px-cloud.net/api/v2/collector',
-        //     proxy,
-        //     headers,
-        //     method: 'POST',
-        //     body: bodyFunc(secondRes)
-        // }, function (error, res, body) {
-        //     if (error) throw Error(error)
-        //     console.log(body, 'body2')
-        // })
+        body2.vid = getUuid()
+        body2.cts = getUuid()
+        body2.sid = getUuid()
+        body2.rsc = 1
+        console.log(body2, 'body2')
+        console.log(bodyFunc(secondRes), 'secondRes')
+        request({
+            url: 'https://collector-px3vk96i6i.px-cloud.net/api/v2/collector',
+            proxy,
+            headers,
+            method: 'POST',
+            body: qs.stringify(body2)
+        }, function (error, res, body) {
+            if (error) throw Error(error)
+            console.log(body, 'body')
+        })
     })
 }
 

@@ -2,7 +2,7 @@ import fs from 'fs'
 export function getUserList () {
   try {
     const data = fs.readFileSync('./data.txt', 'utf8')
-    console.log(data, 'data')
+    // console.log(data, 'data')
     return data.split('\n')
   } catch (e) {
     throw('获取用户信息失败')
