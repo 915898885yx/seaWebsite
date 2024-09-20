@@ -6,7 +6,7 @@ const result = {
   fail: 0
 }
 
-let _px3 = '6f80ee6a36260ed6c2d7ad245427e49a1eb2d0ac900fa57d3567cca4e99edd20:xObFPUB48CAK1S3cTxEg93Bks4Wt48dtLzoRR/X5SaF0H17kSzXqWSesVHT1ieL6ux9oKjHeFS6UE0njzYDZJw==:1000:sHRPr8nNke5vKnjnT7MW9R1OlVCrOWNxtO/0C72vCCzRgq1mtU8N+xV3/N/XbH8T1k95hjYaGgrikYNjSDQgQypKszX1aV4l0fQY4cDW5OVQ8nMy0Kk2+nhT+Nu/ylBY4LoqDj+ybTeN+bi7eo/OejwrhScxGKYPxGhS+kJK6SoXf4zHX/Kv+xJTHCFTGThqJO3lEz3RGWjki6ksIhKh4VTQ/L0ujdmWuMDpLSJCStg='
+let _px3 = '683a2869cec60a61b258f75fa10eb9d8a63b0a0a98c23cf5d294fb7ba8cedb31:Cp4uNNk2Oce8ltdkIhje2CQdeR2ZTsh1LrOtqwc4O1azTvIElY2Gvn1neR6i3F6u3lkn1QevuTY2nFhyqfRSOA==:1000:flCziM7qBVw0SUkyelOnFcZKQF/JaD7256d0lvEGSiHUTZ2jtFKs4xBupIxO4Xd0QdtMLgVUEAS4zqtq3PdwQxdz20My87LrgK5q32hcqq5V8Z1DDe3SSCOXYd4XDPFZbklZsGfD4HTEudEMlWCxEOeq0lnlcSa2x3FSOqHL1VV8xD0xG3ZZ/wUWgzUv/pyRlRsR16wwQEu8RY59q5GAWMwovgPIGNObjL+KFEHG5T8='
 
 let cookie = {
   // _px3: "15398bd29ca0d199b11ba8b368358df0d8655b5da74ee3aedbd5fc39c6bed3b5:mFH+qRieoPolwZX0rJ3HeUpeaq23HW2/dKXRreZbNgx5AfIOBQ6ynr9jVm1PCRZZ4Pyi/YG3AfUyCZim3wrjrA==:1000:+Lk6PbtGKaF7HOlRYNQJXboJeEsbj6ftuEvfljylBbxOzkkfEjBbg4veHfSoBnU5M08yH6DKB3Z0TDwq4zGgJyozKFirxXvJ/7lM6CaXqeiCiTDXtNusAAKIW1CGQgmdFaRtiugE0u2VSya9STejCmVaOFpTTbxDy0gM1XnngarYnT08RW3bxLzty/cn32ZnRsPTXzXjI5QKHoOcGW10/Ec0WiyziwmDSWA3jnAPwEw=",
@@ -129,7 +129,7 @@ async function login(options) {
     data: raw,
     redirect: "follow",
     json: true,
-    // proxy,
+    proxy,
     url: 'https://www.wayfair.com/a/account/authentication/login'
   };
   
@@ -176,7 +176,7 @@ async function init () {
   // _px3 = cookie.value
   const userList = getUserList()
   const random = Math.ceil(Math.random() * 100)
-  userList.slice(random, random + 1).forEach(user => {
+  userList.slice(random, random + 100).forEach(user => {
     console.log(user, 'user')
     const [email, password] = user.split(':')
     login({ email, password })
