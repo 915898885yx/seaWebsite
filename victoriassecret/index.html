@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./signals-sdk-5.2.9.js"></script>
+</head>
+<body>
+    
+</body>
+<script>
+    function e () {
+        window._pingOneSignals.init().then(( () => {
+            console.log("PingOne Signals initialized successfully")
+        }
+        )).catch((e => {
+            console.error("SDK Init failed", e)
+        }
+        ))
+    }
+    window._pingOneSignalsReady ? e() : document.addEventListener("PingOneSignalsReadyEvent", e);
+</script>
+</html>
